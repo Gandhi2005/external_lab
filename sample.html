@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Static Website</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f4f4f9;
+      color: #333;
+    }
+    header {
+      background: #4a90e2;
+      color: white;
+      padding: 1rem 2rem;
+      text-align: center;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      background: #357ab8;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      padding: 1rem;
+      transition: background 0.3s;
+    }
+    nav a:hover {
+      background: #285a8e;
+    }
+    .hero {
+      background: url('https://picsum.photos/1200/400') no-repeat center center/cover;
+      color: white;
+      text-align: center;
+      padding: 5rem 2rem;
+    }
+    .hero h1 {
+      font-size: 3rem;
+      margin: 0;
+    }
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 2rem;
+    }
+    .card {
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      margin: 1rem;
+      padding: 1.5rem;
+      width: 300px;
+      transition: transform 0.3s;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+    }
+    footer {
+      background: #4a90e2;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Welcome to My Website</h1>
+    <p>A simple static site built with HTML & CSS</p>
+  </header>
+
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Services</a>
+    <a href="#">Contact</a>
+  </nav>
+
+  <section class="hero">
+    <h1>Clean & Modern Design</h1>
+    <p>Static websites can still look beautiful!</p>
+  </section>
+
+  <section class="container">
+    <div class="card">
+      <h2>Fast</h2>
+      <p>Static sites load quickly and are easy to deploy anywhere.</p>
+    </div>
+    <div class="card">
+      <h2>Secure</h2>
+      <p>No backend means fewer vulnerabilities to worry about.</p>
+    </div>
+    <div class="card">
+      <h2>Simple</h2>
+      <p>Just HTML & CSS — no complex frameworks required.</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 My Static Website | Built with ❤️</p>
+  </footer>
+</body>
+</html>
